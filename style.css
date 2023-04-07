@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #d9d9d9;
+}
+body::before {
+  content: "";
+  width: 100%;
+  height: 370px;
+  position: absolute;
+  z-index: -1;
+  background-color: #121214;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  max-width: 320px;
+}
+header h1 {
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: white;
+}
+header p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #42d3ff;
+}
+form {
+  padding: 64px;
+  position: relative;
+  background-color: #d6d6d6;
+  border: 1px solid #99999b;
+  border-radius: 8px;
+  margin-top: 42px;
+}
+
+fieldset {
+  border: none;
+}
+fieldset legend {
+  font-family: "Archivo", sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+  width: 100%;
+}
+.input-wrapper {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.input-wrapper label span {
+  margin-left: 12px;
+  color: #c1bccc;
+  font-size: 12px;
+  line-height: 20px;
+}
+.input-wrapper input,
+textarea,
+select,
+button {
+  height: 56px;
+  border-radius: 8px;
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #c1bccc;
+}
+.input-wrapper textarea {
+  border-radius: 8px;
+  height: 170px;
+}
+.input-wrapper select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+  cursor: pointer;
+}
+fieldset div {
+  margin-top: 48px;
+}
+#input-date-time {
+  display: flex;
+  gap: 20px;
+  margin-top: 24px;
+}
+#evento-data {
+  width: 312px;
+}
+#botao {
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  color: white;
+  background-color: #04d361;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 135px;
+  align-items: center;
+  margin-top: 63px;
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+}
+.checkbox-wrapper input {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
